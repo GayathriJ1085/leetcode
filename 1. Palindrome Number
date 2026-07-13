@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int a = sc.nextInt();
+	int temp = a;
+	int rev = 0;
+	if (a < 0) {
+    System.out.print("It is not a palindrome");
+    return;
+	}
+	while (a>0){
+	    rev = rev * 10 + a%10;
+	    a = a / 10;
+	 }
+	 if (temp == rev){
+	     System.out.print("it is a palindrome");
+	 }else{
+	     System.out.print("It is not a palindrome");
+	 }
+ }
+}
