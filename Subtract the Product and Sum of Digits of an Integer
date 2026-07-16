@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int sum =0;
+		int pro =1;
+		while (a>0){
+		    int reminder = a%10;
+		    sum = sum + reminder;
+		    pro = pro * reminder;
+		    
+		    a = a/10;
+		}
+		System.out.print(pro - sum);
+	}
+}
