@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int real = a;
+		int reminder =0;
+		int count =0;
+		while (a>0){
+		    reminder = a%10; 
+		    if ((reminder!=0)&&real % reminder ==0){
+		        count ++;
+		    }
+		    a = a / 10;
+		}
+		System.out.print(count);
+	}
+}
