@@ -1,0 +1,28 @@
+import java.util.*;
+class dupliagain{
+    public static void main(String []  args){
+        Scanner sc= new Scanner (System.in);
+        int a = sc.nextInt();
+        int arr[] = new int[a];
+
+        for(int i=0; i<a; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        boolean bla = false;
+        HashSet <Integer> set = new HashSet<>();
+        for(int i=0; i<a ; i++){
+            if (set.contains(arr[i])){
+                bla = true;
+                break;
+            }
+            set.add(arr[i]);
+        }
+
+        if (bla ==true){
+            System.out.print("contains dupli");
+        }else{
+            System.out.print("doesnot contain dupli");
+        }
+    }
+}
